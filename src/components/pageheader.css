@@ -1,0 +1,44 @@
+.pageheader {
+    padding: 15px;
+    border-bottom: 1px solid #d3d7db;
+    border-top: 1px solid #eee;
+    background: #f7f7f7;
+    position: relative;
+}
+
+.pageheader h2 {
+    font-size: 28px;
+    color: #1D2939;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.pageheader h2 span {
+    font-size: 13px;
+    text-transform: none;
+    color: #999;
+    font-style: italic;
+    vertical-align: middle;
+    letter-spacing: 0;
+}
+
+.pageheader h2 span::before {
+    content: '/';
+    margin: 0 10px 0 5px;
+    color: #ccc;
+}
+
+@media screen and (max-width: 360px) {
+    .pageheader h2 span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .pageheader h2 {
+      font-size: 18px;
+  }
+  .pageheader h2 span {
+      font-size: 11px;
+  }
+}
